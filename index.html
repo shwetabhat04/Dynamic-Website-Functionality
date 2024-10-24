@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
+</head>
+<body>
+  <header>
+    <h1 id="page-title">Services</h1> <!-- The default title -->
+  </header>
+  
+  <nav>
+    <button onclick="changeTitle('Home')">Home</button>
+    <button onclick="changeTitle('About Us')">About Us</button>
+    <button onclick="changeTitle('Services')">Services</button>
+    <button onclick="changeTitle('Contact')">Contact</button>
+  </nav>
+  
+  <p>Select a button to change the title.</p>
+
+  <script>
+    function changeTitle(newTitle) {
+      document.getElementById('page-title').innerText = newTitle;
+    }
+  </script>
+</body>
+</html>
